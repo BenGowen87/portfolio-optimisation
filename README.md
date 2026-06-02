@@ -1,20 +1,20 @@
 # portfolio-optimisation
 
-# Project overview
+## Project overview
 
 This project investigates portfolio optimisation using historical stock market data from Apple (AAPL), Microsoft (MSFT), Nvidia (NVDA) and the S&P 500 ETF (SPY). Using Python, historical price data is downloaded and analysed to calculate returns, volatility, correlation and covariance between assets.
 
 The project then applies principles from Modern Portfolio Theory to simulate thousands of portfolios with different asset weightings. Portfolio risk and return are evaluated, the Sharpe ratio is used to identify attractive portfolios, and the efficient frontier is constructed to visualise the optimal trade-off between risk and return.
 
-# Key Objectives
+## Key Objectives
 
--Download and process historical stock market data.
--Calculate and analyse daily returns.
--Compare asset risk using volatility.
--Investigate relationships between assets using correlation and covariance.
--Simulate thousands of portfolios with different asset allocations.
--Identify minimum volatility, maximum return and maximum Sharpe ratio portfolios.
--Construct and analyse the efficient frontier.
+- Download and process historical stock market data.
+- Calculate and analyse daily returns.
+- Compare asset risk using volatility.
+- Investigate relationships between assets using correlation and covariance.
+- Simulate thousands of portfolios with different asset allocations.
+- Identify minimum volatility, maximum return and maximum Sharpe ratio portfolios.
+- Construct and analyse the efficient frontier.
 
 # Project structure
 
@@ -30,19 +30,27 @@ Notebook 5 - this notebook first finds the most efficient simulated portfolios b
 
 # Limitations
 
--When calculating the sharpe ratio I assumed the risk free return is 0 where in reality it would not be.
--Only 4 assets where used and analysed.
--I only analysed the data from 2019 to 2024 which means it may not predict future returns
+- When calculating the sharpe ratio I assumed the risk free return is 0 where in reality it would not be.
+- Only 4 assets where used and analysed.
+- I only analysed the data from 2019 to 2024 which means it may not predict future returns
 
 # Extensions
 
--Use treasury yeilds to get a more accurate value for the risk free return
--Use more than 4 assets in my analysis
+- Use treasury yeilds to get a more accurate value for the risk free return
+- Use more than 4 assets in my analysis
 
 # Technologies used
 
--python
--pandas
--numPy
--Matplotlib
--yfinance
+- python
+- pandas
+- numPy
+- Matplotlib
+- yfinance
+
+# Keyfindings
+
+- Nvidia achieved the highest average returns but also exhibited the greatest volatility.
+- The S&P 500 ETF demonstrated lower risk than the individual technology stocks.
+- Diversification reduced portfolio volatility through imperfect correlations between assets.
+- The maximum Sharpe ratio portfolio provided the best risk-adjusted return.
+- The efficient frontier illustrated the trade-off between portfolio risk and expected return.
